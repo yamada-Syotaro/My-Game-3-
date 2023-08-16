@@ -34,5 +34,10 @@ public class Player : MonoBehaviour
         }
 
         transform.position = position;
+
+        if (position.y < -10)
+        {
+            Destroy(this.gameObject);
+        }
     }
 }

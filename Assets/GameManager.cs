@@ -12,7 +12,8 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        player.gameObject.SetActive(false);
+        player.gameObject.SetActive(true);
+        GameOverCanvas.gameObject.SetActive(false);
     }
 
     // Update is called once per frame
